@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="gameDesigner" size="1.000000 1.800338" />
+    <ImageTarget name="artist" size="1.000000 1.800338" />
+    <ImageTarget name="writer" size="1.000000 1.800338" />
+    <ImageTarget name="programmer" size="1.000000 1.796954" />
+    <ImageTarget name="producer" size="1.000000 1.800338" />
+    <ImageTarget name="freelancer" size="1.000000 1.800338" />
+  </Tracking>
+</QCARConfig>
