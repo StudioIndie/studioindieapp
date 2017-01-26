@@ -19,3 +19,7 @@ EditorBuildSettings:
     path: Assets/Scenes/AR.unity
   - enabled: 1
     path: Assets/Scenes/Dynamic.unity
+  - enabled: 1
+    path: Assets/Scenes/Team.unity
+  - enabled: 1
+    path: Assets/Scenes/profession.unity
