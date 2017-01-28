@@ -10,13 +10,18 @@ public class Fade : MonoBehaviour
     public string newScene;
     public bool fadeIn;
     public bool fadeOut;
+
     void Start()
     {
         fadeIn = true;
         fade = GameObject.Find("Fade");
         a = 255;
     }
-    void Update()//Função para atualização do alpha do fade de acordo com a booleana ativada. 
+
+    /// <summary>
+    /// No Update realiza algoritmo para atualização do alfa do fade de acordo com a booleana ativada.
+    /// </summary>
+    void Update() 
     {
         if (fadeIn)
         {
@@ -41,47 +46,25 @@ public class Fade : MonoBehaviour
             }
             else
             {
-                ChangeScene();
+                LoadScene();
             }
         }
     }
-    void ChangeScene()//Função de controle de cenas.
+    /// <summary>
+    /// Método que faz o carregamento das cenas
+    /// </summary>
+    void LoadScene()
     {
         SceneManager.LoadScene(newScene);
     }
-    public void ToMenu()
+
+    /// <summary>
+    /// Método que faz a escolha das cenas
+    /// </summary>
+    /// <param name="scene">Recebe o nome da cena</param>
+    public void ChangeScene(string scene)
     {
         fadeOut = true;
-        newScene = "Menu";
-    }
-    public void ToModes()
-    {
-        fadeOut = true;
-        newScene = "Mods";
-    }
-    public void ToAbout()
-    {
-        fadeOut = true;
-        newScene = "About";
-    }
-    public void ToProfessions()
-    {
-        fadeOut = true;
-        newScene = "Professions";
-    }
-    public void ToRules()
-    {
-        fadeOut = true;
-        newScene = "Rules";
-    }
-	public void ToAR()
-    {
-        fadeOut = true;
-        newScene = "AR";
-    }
-    public void ToDynamic()
-    {
-        fadeOut = true;
-        newScene = "Dynamic";
+        newScene = scene;
     }
 }

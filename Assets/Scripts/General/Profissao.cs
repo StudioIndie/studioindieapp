@@ -4,6 +4,10 @@ using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Classe criada para fazer o carregamento dinâmico do conteudo
+/// De acordo com o ID que foi passado
+/// </summary>
 public class Profissao : MonoBehaviour
 {
     public static int idProfissao;
